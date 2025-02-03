@@ -1,5 +1,7 @@
 import { Container, Title} from "@/components/shared";
 import Filters from "@/components/shared/filters";
+import ProductCard from "@/components/shared/ProductCard";
+import ProductsGroupList from "@/components/shared/ProductsGroupList";
 import TopBar from "@/components/shared/topBar";
 
 
@@ -16,7 +18,7 @@ export default function Home() {
 
       
       <Container className="mt-10 pb-14">
-        <div className="flex gap-[60px]">
+        <div className="flex gap-[80px]">
           {/* Filtracja */}
           <div className="w-[250px]">
             <Filters />
@@ -26,7 +28,96 @@ export default function Home() {
           {/* Lista towarów */}
           <div className="flex-1">
             <div className="flex flex-col gap-16">
-              Lista towarów
+              <ProductsGroupList title="Pizza" items={[{
+                id: 1,
+                name: "Pizza Margherita",
+                imageUrl: "https://media.dodostatic.com/image/r:292x292/11ef16e27404d8a2bffb177c27cf05d2.avif",
+                items: [{
+                  price: 25,
+                }]
+              }, {
+                id: 2,
+                name: "Pizza Capriciosa",
+                imageUrl: "https://media.dodostatic.com/image/r:292x292/11ef16e27404d8a2bffb177c27cf05d2.avif",
+                items: [{
+                  price: 30,
+                }]
+              }, {
+                id: 3,
+                name: "Pizza Hawajska",
+                imageUrl: "https://media.dodostatic.com/image/r:292x292/11ef16e27404d8a2bffb177c27cf05d2.avif",
+                items: [{
+                  price: 35,
+                }]
+              }, {
+                id: 4,
+                name: "Pizza Pepperoni",
+                imageUrl: "https://media.dodostatic.com/image/r:292x292/11ef16e27404d8a2bffb177c27cf05d2.avif",
+                items: [{
+                  price: 40,
+                }]
+              }, {
+                id: 5,
+                name: "Pizza Vegetariana",
+                imageUrl: "https://media.dodostatic.com/image/r:292x292/11ef16e27404d8a2bffb177c27cf05d2.avif",
+                items: [{
+                  price: 45,
+                }]
+              }, {
+                id: 6,
+                name: "Pizza Quattro Stagioni",
+                imageUrl: "https://media.dodostatic.com/image/r:292x292/11ef16e27404d8a2bffb177c27cf05d2.avif",
+                items: [{
+                  price: 50,
+                }]
+              }]} categoryId={1}/>
+
+              <ProductsGroupList title="Napoje" items={[{
+                id: 7,
+                name: "Coca-Cola",
+                imageUrl: "https://szybkikoszyk.pl/napoj-gazowany-coca-cola-330-ml.2.jpg",
+                items: [{
+                  price: 5,
+                }]
+                
+              }, { 
+                id: 8,
+                name: "Sprite",
+                imageUrl: "https://szybkikoszyk.pl/napoj-gazowany-coca-cola-330-ml.2.jpg",
+                items: [{
+                  price: 5,
+                }]
+              }, {
+                id: 9,
+                name: "Fanta",
+                imageUrl: "https://szybkikoszyk.pl/napoj-gazowany-coca-cola-330-ml.2.jpg",
+                items: [{
+                  price: 5,
+                }]
+              }, {
+                id: 10,
+                name: "Pepsi",
+                imageUrl: "https://szybkikoszyk.pl/napoj-gazowany-coca-cola-330-ml.2.jpg",
+                items: [{
+                  price: 5,
+                }]
+              }, {
+                id: 11,
+                name: "Mirinda",
+                imageUrl: "https://szybkikoszyk.pl/napoj-gazowany-coca-cola-330-ml.2.jpg",
+                items: [{
+                  price: 5,
+                }]
+              }, {
+                id: 12,
+                name: "7Up",
+                imageUrl: "https://szybkikoszyk.pl/napoj-gazowany-coca-cola-330-ml.2.jpg",
+                items: [{
+                  price: 5,
+                }]
+              }]}
+              categoryId={2}
+            />
             </div>
           </div>
         </div>

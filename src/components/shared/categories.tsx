@@ -5,7 +5,7 @@ interface categoriesProps {
   className?: string;
 }
 
-const cats = ['Pizzy', "Kombo", "Przekąski", "Koktajle", "Kawa", "Napoje", "Desery", "Promocje"];
+const cats = ['Pizza', "Combo", "Przystawki", "Koktajle", "Kawa", "Napoje", "Desery", "Promocje"];
 const activeIndex = 0;
 
 export const categories: FC<categoriesProps> = ({ className }) => {
