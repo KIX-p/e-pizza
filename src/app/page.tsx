@@ -72,6 +72,25 @@ export default function Home() {
                 }]
               }]} categoryId={1}/>
 
+              <ProductsGroupList title="Combo" items={[
+                {
+                  id: 13,
+                  name: "Duza pizza i przystawka",
+                  imageUrl: "https://media.dodostatic.com/image/r:233x233/11ef427a78aa6fcfb1229f936e6c4d91.avif",
+                  items: [{
+                    price: 58,
+                  }]
+                }, 
+                {
+                  id: 14,
+                  name: "Duza pizza i napoj",
+                  imageUrl: "https://media.dodostatic.com/image/r:233x233/11ef427a78aa6fcfb1229f936e6c4d91.avif",
+                  items: [{
+                    price: 55,
+                  }]
+                }
+              ]} categoryId={2}/>
+
               <ProductsGroupList title="Napoje" items={[{
                 id: 7,
                 name: "Coca-Cola",
@@ -116,7 +135,7 @@ export default function Home() {
                   price: 5,
                 }]
               }]}
-              categoryId={2}
+              categoryId={6}
             />
             </div>
           </div>
