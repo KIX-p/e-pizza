@@ -88,6 +88,38 @@ export default function Home() {
                   items: [{
                     price: 55,
                   }]
+                },
+                {
+                  id: 15,
+                  name: "Duza pizza i przystawka",
+                  imageUrl: "https://media.dodostatic.com/image/r:233x233/11ef427a78aa6fcfb1229f936e6c4d91.avif",
+                  items: [{
+                    price: 58,
+                  }]
+                }, 
+                {
+                  id: 16,
+                  name: "Duza pizza i napoj",
+                  imageUrl: "https://media.dodostatic.com/image/r:233x233/11ef427a78aa6fcfb1229f936e6c4d91.avif",
+                  items: [{
+                    price: 55,
+                  }]
+                },
+                {
+                  id: 17,
+                  name: "Duza pizza i przystawka",
+                  imageUrl: "https://media.dodostatic.com/image/r:233x233/11ef427a78aa6fcfb1229f936e6c4d91.avif",
+                  items: [{
+                    price: 58,
+                  }]
+                }, 
+                {
+                  id: 18,
+                  name: "Duza pizza i napoj",
+                  imageUrl: "https://media.dodostatic.com/image/r:233x233/11ef427a78aa6fcfb1229f936e6c4d91.avif",
+                  items: [{
+                    price: 55,
+                  }]
                 }
               ]} categoryId={2}/>
 
